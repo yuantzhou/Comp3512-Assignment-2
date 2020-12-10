@@ -25,7 +25,7 @@ require_once '../php/api/ASG2-classes.php';
                 <li><a href="galleries.php">Galleries</a></li>
                 <li><a href="browse-paintings.php">Browse</a></li>
                 <li><a href="favorites.php">Favorites</a></li> <!-- only available when logged in -->
-                <li><a href="logged-in.php">Login/Logout</a></li>
+                <li><a href="logout.php">Login/Logout</a></li>
             </ul>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></li>
