@@ -10,17 +10,17 @@ function initMap() {
 document.addEventListener("DOMContentLoaded", function () {
     const galleryAPI = "../php/api/api-galleries.php";
 
-    /* fetch(galleryAPI)
+    fetch(galleryAPI)
         .then(resp => resp.json())
         .then(data => {
             populateGalleries(data);
         })
-        .catch(err => console.error(err)); */
+        .catch(err => console.error(err));
 
 
     /* LocalStorage not working as of 10:30am December 10th 2020 */
 
-    if (localStorage.getItem("gallery") === null) {
+    /* if (localStorage.getItem("gallery") === null) {
         fetch(galleryAPI)
             .then(resp => resp.json())
             .then(gallery => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const gallery = JSON.parse(localStorage.getItem("gallery"));
         populateGalleries(gallery);
         console.log("not null");
-    }
+    } */
 
 
     /* populates galleryList section, populate galleryInfo section,
