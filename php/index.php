@@ -48,7 +48,7 @@ try {
 
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="css/notLogged.css">
+    <link rel="stylesheet" href="../css/notLogged.css">
 </head>
 
 <body>
@@ -69,7 +69,6 @@ try {
                     <form method="post" class="searchBar">
                         <a class="browse" href="browse-paintings.php"><input type="text" placeholder="Search a painting" name="search" /></a>
                 </div>
-                <div><?php  ?></div>
             </form>
         </div>
     </main>
