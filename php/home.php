@@ -77,13 +77,11 @@ function findRecommended()
     <title>Homepage</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/assign2.css">
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 
 <body>
-    <header>
-        <a class="logout" href="logout.php">Logout</a>
-    </header>
+
     <main id="home">
         <div class="box userInfo">
             <h2>User Info </h2>
@@ -95,14 +93,12 @@ function findRecommended()
         </div>
         <div class="box favoritePainting">
             <h2>Favorite Paintings</h2>
-            <?php include 'favourite.php'; ?>
+            <?php include 'favorites.php'; ?>
         </div>
         <div class="box search">
             <section>
                 <form method="post" class="searchBar">
-                    <a class="browse" href="browse-paintings.php"><input type="text" placeholder="Search a painting" name="search" /></a>
-
-                    <button type="submit">Search</button>
+                    <a class="browse" href="browse-paintings.php"><input type="text" placeholder="Search a painting" name="search" /></a>                
                 </form>
             </section>
         </div>
