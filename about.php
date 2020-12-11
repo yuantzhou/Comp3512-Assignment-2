@@ -36,7 +36,7 @@ include 'nav-header.php';
                             <li>JSON</li>
                         </ul>
                     <li>Hosting Service:
-                        <ul>-----</ul>
+                        <ul>Heroku</ul>
                     </li>
                 </ul>
 
