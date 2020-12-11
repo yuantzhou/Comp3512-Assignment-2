@@ -4,7 +4,6 @@ html {
 label {
     padding:10px;
     margin: 2em;
-
 }
 body{
     font-family: 'Oxygen', sans-serif;
@@ -12,7 +11,7 @@ body{
     height: 100%;
     background-image: url("../images/darya-tryfanava-UCNaGWn4EfU-unsplash.jpg"); /**image from https://unsplash.com/photos/9LyLBVzr9ys **/
     background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     text-align: center;
 
 }
@@ -27,8 +26,8 @@ form {
     border: 1px solid gray;
     border-radius: 5px;
     background-color: lightgray;
-    opacity: 0.8;
-    margin-top: 25%;
+    opacity: .925;
+    margin-top: 10%;
 }
 
 input {

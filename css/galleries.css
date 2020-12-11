@@ -68,11 +68,6 @@ div img#biggerImg, #bigImg {
     line-height: 30px;
     padding: 0px 40px;
 }
-
-.info {
-    display: none;
-}
-
 #map {
     margin: 1em;
     grid-column: 2/5;
@@ -178,21 +173,24 @@ main {
         display: block;
     }
     #galleryList {
-        padding: 2px;
+        padding: 20px;
         display: block;
     }
     #galleryInfo {
-        padding: 2px;
+        padding: 20px;
         display: block;
     }
     #paintingsList {
-        padding: 2px;
+        padding: 20px;
         display: block;
         overflow: auto
     }
     #map {
         padding: 500px 300px;
         display: block;
+        border-radius: 20px;
+        border-style: dotted;
+        margin: 10px;
     }
     #clickTitle:hover {
         cursor: pointer;

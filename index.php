@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-require_once '../php/api/config.inc.php';
-require_once '../php/api/ASG2-classes.php';
-include '../php/nav-header.php';
+require_once 'api/config.inc.php';
+require_once 'api/ASG2-classes.php';
+include 'nav-header.php';
 
 try {
 
@@ -48,7 +48,7 @@ try {
 
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="../css/notLogged.css">
+    <link rel="stylesheet" href="css/notLogged.css">
 </head>
 
 <body>

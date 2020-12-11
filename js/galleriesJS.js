@@ -2,14 +2,14 @@
 function initMap() {
 
     map = new google.maps.Map(document.querySelector("div#map"), {
-        center: { lat: 41.89474, lng: 12.4839 },
+        center: { lat: 41.89474, lng: 12.4838 },
         zoom: 6
     });
 }
 
 //Fetches galleries api and stores it within local storage. If api is already stored set api to local storage
 document.addEventListener("DOMContentLoaded", function () {
-    const galleryAPI = "../php/api/api-galleries.php";
+    const galleryAPI = "api/api-galleries.php";
 
     fetch(galleryAPI)
         .then(resp => resp.json())
@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             li.addEventListener("click", function () {
                 galleryInfo(d);
-                createMap(d);
                 generatePaintings(d);
+                createMap(d);
             });
 
             list.appendChild(li);
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /* create a map using Google's API */
     function createMap(gallery) {
         map = new google.maps.Map(document.querySelector("div#map"), {
-            center: { lat: gallery.Latitude, lng: gallery.Longitude },
+            center: { lat: parseFloat(gallery.Latitude), lng: parseFloat(gallery.Longitude) },
             zoom: 18,
             mapTypeId: 'satellite'
         });
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* fetches the information from paintings.php */
     function generatePaintings(d) {
-        fetch(`../php/api/api-paintings.php?galleryID=${d.GalleryID}`)
+        fetch(`api/api-paintings.php?galleryID=${d.GalleryID}`)
             .then(response => response.json())
             .then(paintingsData => {
                 populatePaintingsTable(paintingsData);
@@ -137,14 +137,6 @@ document.addEventListener("DOMContentLoaded", function () {
             linkToSingle.appendChild(title);
             row.appendChild(yow);
 
-            /* function redirectSinglePainting(p) {
-                linkToSingle.href = `single-painting.php?paintingID=${p.paintingID}`;
-            }
-     
-            //handles the "click" by the user and expand image
-            linkToSingle.addEventListener('click', function (e) {
-                redirectSinglePainting(e)
-            }); */
         }
     }
 

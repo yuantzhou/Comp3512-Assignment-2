@@ -34,7 +34,7 @@ session_start();
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='../css/single-painting.css' rel='stylesheet' type='text/css'>
+    <link href='css/single-painting.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -42,7 +42,7 @@ session_start();
         <!--section to display image-->
         <section id='image'>
             <!--image to display goes here, for now a default is in place-->
-            <img src="../images/paintings/square/<?= $painting['ImageFileName'] ?>.jpg" alt="<?= $painting['Title'] ?>" id="imgInUse"></img>
+            <img src="images/paintings/square/<?= $painting['ImageFileName'] ?>.jpg" alt="<?= $painting['Title'] ?>" id="imgInUse"></img>
         </section>
         <!--section to show painting information-->
         <section id='descriptionSec'>

@@ -1,7 +1,7 @@
 <?php
-require_once '../php/api/config.inc.php';
-require_once '../php/api/ASG2-classes.php';
-include '../php/nav-header.php'
+require_once 'api/config.inc.php';
+require_once 'api/ASG2-classes.php';
+include 'nav-header.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,7 +10,7 @@ include '../php/nav-header.php'
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galleries</title>
-    <link rel="stylesheet" href="../css/galleries.css">
+    <link rel="stylesheet" href="css/galleries.css">
 
 </head>
 
@@ -54,6 +54,7 @@ include '../php/nav-header.php'
                 <table id="table">
                     <thead>
                         <tr>
+
                             <th></th>
                             <th id="artist">Artist</th>
                             <th id="title">Title</th>
@@ -71,7 +72,7 @@ include '../php/nav-header.php'
         <!--for map  -->
         <div id="map"></div>
     </main>
-    <script src="../js/galleriesJS.js"></script>
+    <script src="js/galleriesJS.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzKtg9zVIqY-SrEfnsFS50glx-eBLZN9Q&callback=initMap" async defer></script>
 </body>
 

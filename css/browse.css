@@ -17,7 +17,7 @@
 
 #outerbox2 {
     grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-end: 6;
     background-color: var(--box-header-color);
     padding: 10px;
 }

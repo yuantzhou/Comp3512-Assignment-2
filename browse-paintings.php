@@ -45,7 +45,7 @@ try {
     <title>Browse Paintings</title>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='../css/browse.css' rel='stylesheet' type='text/css'>
+    <link href='css/browse.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -60,7 +60,7 @@ try {
                     <input type='text' class='txtInput' id='title' name='title'><br><br><br>
                     <label>Artist</label>
                     <select id='artist' class='dropdown' name='artists'>
-                        <option valeu='0'>Select Artist</option>
+                        <option value='0'>Select Artist</option>
                         <!--Gets list of artists to choose from-->
                         <?php
                         foreach ($artists as $row) {
@@ -117,11 +117,11 @@ try {
                     }
 
                     if (isset($_GET['artist'])) {
-                        $artist = $_GET['artist'];
+                        $artist = $_GET['ArtistID'];
                     }
 
                     if (isset($_GET['gallery'])) {
-                        $gallery = $_GET['artist'];
+                        $gallery = $_GET['GalleryID'];
                     }
 
                     if (isset($_GET['beforeTxt']) && isset($_GET['before'])) {
@@ -137,10 +137,8 @@ try {
                         $end = $_GET['betweenEnd'];
                     }
                 }
-                ?>
 
-                <!--here will be the generated table rows-->
-                <?php
+                //here will be the generated table rows
                 function checkName($row)
                 {
                     if (is_null($row['FirstName'])) {
@@ -151,8 +149,17 @@ try {
                         return $row['LastName'] . ", " . $row['FirstName'];
                     }
                 }
-                function generateTable($list)
-                {
+                generateTable($paintings); ?>
+
+                <?php function generateTable($list)
+                { ?>
+                    <tr>
+                        <th></th>
+                        <th>Artist</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                    <?php
                     foreach ($list as $row) { ?>
                         <tr class="tempTr">
                             <td class="img">
@@ -177,7 +184,8 @@ try {
                                 </form>
                             </td>
                             <td><button><a href="single-painting.php?id=<?= $row['PaintingID'] ?>">View</a></button></td>
-                    <?php }
+                    <?php
+                    }
                 } ?>
             </table>
         </section>

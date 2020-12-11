@@ -1,7 +1,7 @@
 <?php
-require_once '../php/api/config.inc.php';
-require_once '../php/api/ASG2-classes.php';
-include '../php/nav-header.php';
+require_once 'api/config.inc.php';
+require_once 'api/ASG2-classes.php';
+include 'nav-header.php';
 
 session_start();
 $userId = $_SESSION['id'];
@@ -75,9 +75,7 @@ function findRecommended()
 <head>
     <meta charset="utf-8" />
     <title>Homepage</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
@@ -98,7 +96,7 @@ function findRecommended()
         <div class="box search">
             <section>
                 <form method="post" class="searchBar">
-                    <a class="browse" href="browse-paintings.php"><input type="text" placeholder="Search a painting" name="search" /></a>                
+                    <a class="browse" href="browse-paintings.php"><input type="text" placeholder="Search a painting" name="search" /></a>
                 </form>
             </section>
         </div>
