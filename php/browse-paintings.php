@@ -60,7 +60,7 @@ try {
                     <input type='text' class='txtInput' id='title' name='title'><br><br><br>
                     <label>Artist</label>
                     <select id='artist' class='dropdown' name='artists'>
-                        <option valeu='0'>Select Artist</option>
+                        <option value='0'>Select Artist</option>
                         <!--Gets list of artists to choose from-->
                         <?php
                         foreach ($artists as $row) {

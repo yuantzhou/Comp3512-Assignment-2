@@ -1,5 +1,6 @@
 /* inititializes map from Google's API */
 function initMap() {
+
     map = new google.maps.Map(document.querySelector("div#map"), {
         center: { lat: 41.89474, lng: 12.4839 },
         zoom: 6
@@ -74,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* create a map using Google's API */
     function createMap(gallery) {
-
         map = new google.maps.Map(document.querySelector("div#map"), {
             center: { lat: gallery.Latitude, lng: gallery.Longitude },
             zoom: 18,
