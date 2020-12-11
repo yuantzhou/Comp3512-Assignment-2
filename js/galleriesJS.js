@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(err => console.error(err));
 
-
     /* LocalStorage not working as of 10:30am December 10th 2020 */
 
     /* if (localStorage.getItem("gallery") === null) {
