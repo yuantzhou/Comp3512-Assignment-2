@@ -21,8 +21,20 @@ include '../php/nav-header.php'
             <li>Fall 2020</li>
             <li>Technologies used:
                 <ul>
-                    <li>
-                        etc...
+                    <li>XAMPP Control Panel</li>
+                    <li>PHPMyAdmin</li>
+                    <li>Microsoft Visual Studio Code</li>
+                    <li>Git Functionality within VS Code</li>
+                    <li>Discord for communication</li>
+                    <li>Langauages Used:
+                        <ul>
+                            <li>SQL</li>
+                            <li>PHP</li>
+                            <li>JavaScript</li>
+                            <li>HTML / CSS</li>
+                        </ul>
+                    <li>Hosting Service:
+                        <ul>-----</ul>
                     </li>
                 </ul>
             </li>
