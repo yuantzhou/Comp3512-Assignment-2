@@ -1,10 +1,12 @@
 <?php 
-//session_start();
+session_start();
+require_once '../php/api/config.inc.php';
+require_once '../php/api/ASG2-classes.php';
+include '../php/nav-header.php'
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
-define("PRODUCTNAME", 1);
+// define("PRODUCTNAME", 1);
 
 $cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : '';
 $eventURL = isset($_SESSION['event_url_blackout']) ? $_SESSION['event_url_blackout'] : '';
