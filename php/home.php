@@ -98,7 +98,7 @@ function findRecommended()
         <div class="box search">
             <section>
                 <form method="post" class="searchBar">
-                    <a class="browse" href="browse-paintings.php"><input type="text" placeholder="Search a painting" name="search" /></a>                
+                    <a class="browse" href="browse-paintings.php"><input type="text" placeholder="Search a painting" name="search" /></a>
                 </form>
             </section>
         </div>
