@@ -68,11 +68,6 @@ div img#biggerImg, #bigImg {
     line-height: 30px;
     padding: 0px 40px;
 }
-
-.info {
-    display: none;
-}
-
 #map {
     margin: 1em;
     grid-column: 2/5;
