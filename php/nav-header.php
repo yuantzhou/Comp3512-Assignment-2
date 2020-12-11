@@ -19,7 +19,7 @@ require_once '../php/api/ASG2-classes.php';
             <a href="#home" class="active"></a>
             <!-- Navigation links (hidden by default) -->
             <ul id="myLinks">
-                <li><a href="home.php"><img id="logo" src="../images/logo.jpg"></a></li>
+                <img id="logo" src="../images/logo.jpg">
                 <li><a href="home.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="galleries.php">Galleries</a></li>
