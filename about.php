@@ -51,7 +51,7 @@ include 'nav-header.php';
                 </ul>
             </li>
             <br>
-            <li>Assignment 2 Github: <a href="">Repository Link</a></li>
+            <li>Assignment 2 Github: <a href="https://github.com/yuantzhou/Comp3512-Assignment-2">Repository Link</a></li>
             <br>
             <li>External Sources
                 <ul>
