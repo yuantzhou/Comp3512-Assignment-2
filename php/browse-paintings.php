@@ -117,11 +117,11 @@ try {
                     }
 
                     if (isset($_GET['artist'])) {
-                        $artist = $_GET['artist'];
+                        $artist = $_GET['ArtistID'];
                     }
 
                     if (isset($_GET['gallery'])) {
-                        $gallery = $_GET['artist'];
+                        $gallery = $_GET['GalleryID'];
                     }
 
                     if (isset($_GET['beforeTxt']) && isset($_GET['before'])) {
@@ -137,10 +137,8 @@ try {
                         $end = $_GET['betweenEnd'];
                     }
                 }
-                ?>
 
-                <!--here will be the generated table rows-->
-                <?php
+                //here will be the generated table rows
                 function checkName($row)
                 {
                     if (is_null($row['FirstName'])) {
@@ -151,13 +149,21 @@ try {
                         return $row['LastName'] . ", " . $row['FirstName'];
                     }
                 }
-                function generateTable($list)
-                {
+                generateTable($paintings); ?>
+
+                <?php function generateTable($list) { ?>
+                <tr>
+                    <th></th>
+                    <th>Artist</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+                <?php 
                     foreach ($list as $row) { ?>
                         <tr class="tempTr">
                             <td class="img">
                                 <a href="single-painting.php?id=<?= $row['PaintingID'] ?>">
-                                    <img src='images/paintings/square-medium/<?= $row['ImageFileName'] ?>.jpg' />
+                                    <img src='../images/paintings/square-medium/<?= $row['ImageFileName'] ?>.jpg' />
                                 </a>
                             </td>
                             <td class="artist"><?= checkName($row) ?></td>
@@ -177,7 +183,8 @@ try {
                                 </form>
                             </td>
                             <td><button><a href="single-painting.php?id=<?= $row['PaintingID'] ?>">View</a></button></td>
-                    <?php }
+                    <?php 
+                    }
                 } ?>
             </table>
         </section>
