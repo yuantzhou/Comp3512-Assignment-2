@@ -13,7 +13,7 @@
 }
   .topnav li {
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     display: inline-block;
     list-style: none;
     text-align: center;
@@ -24,10 +24,12 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    width: 100%;
   }
   .topnav li a {
     margin-right: 10px;
-    color: white;
+    color: black;
+    display: block;
     padding: 10px;
     text-decoration: none;
   }
@@ -36,6 +38,7 @@
     height: 50px;
     width: 70px;
     margin:10px;
+    display: inline;
   }
   
   /* Style the hamburger menu */
@@ -59,3 +62,58 @@
     background-color: #ac7e00;
     color: white;
   }
+  .hamIcon {
+    display: hidden;
+    background: transparent;
+    color-adjust: white;
+    width: 50px;
+    height: 50px;
+  }
+  .hamIcon:hover {
+    cursor: pointer;
+  }
+  /* media screen and hamburger menu */
+  @media screen and (max-width:768px) {
+    .links {
+      display: none;
+      text-align: center;
+    }
+    .toggleLinks {
+      display: block;
+      position: absolute;
+      position: relative;
+      top: 80px;
+    }
+    .small {
+      height: 10vh;
+    }
+    .expanded {
+      height: 45vh;
+    }
+    #logo {
+      float: left;
+    }
+    .hamIcon {
+      float: right;
+    }
+    .topnav ul {
+      position: absolute;
+    }
+    .topnav li {
+      text-decoration: none;
+      font-size: 12px;
+      display: block;
+      list-style: none;
+      margin: 1px;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    #hamIcon {
+      display: none;
+    }
+    .links {
+      display: initial;
+    }
+  }
+  

@@ -14,11 +14,11 @@ require_once '../php/api/ASG2-classes.php';
 <body>
     <header>
         <!-- Top Navigation Menu -->
-        <div class="topnav">
+        <div class="topnav small">
             <a href="#home" class="active"></a>
             <!-- Navigation links (hidden by default) -->
-            <ul id="myLinks">
-                <img id="logo" src="../images/logo.jpg">
+            <img id="logo" src="../images/logo.jpg">
+            <ul class="links">
                 <li><a href="home.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="galleries.php">Galleries</a></li>
@@ -27,11 +27,13 @@ require_once '../php/api/ASG2-classes.php';
                 <li><a class="logged-in" href="logout.php">Logout</a></li>
                 <li><a class="logged-out" href="logout.php">Login</a></li>
             </ul>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"></li>
-            <i class="fa fa-bars"></i>
-            </a>
+
+            <!-- "Hamburger menu" to toggle the navigation links -->
+            <div class="hamIcon" id="hamIcon">
+                <h1>&#9776;</h1>
+            </div>
         </div>
     </header>
+    <script src=" ../js/nav.js"> </script>
 
 </html>
