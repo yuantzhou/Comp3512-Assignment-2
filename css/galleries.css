@@ -188,6 +188,9 @@ main {
     #map {
         padding: 500px 300px;
         display: block;
+        border-radius: 20px;
+        border-style: dotted;
+        margin: 10px;
     }
     #clickTitle:hover {
         cursor: pointer;
