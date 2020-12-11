@@ -173,15 +173,15 @@ main {
         display: block;
     }
     #galleryList {
-        padding: 2px;
+        padding: 20px;
         display: block;
     }
     #galleryInfo {
-        padding: 2px;
+        padding: 20px;
         display: block;
     }
     #paintingsList {
-        padding: 2px;
+        padding: 20px;
         display: block;
         overflow: auto
     }
