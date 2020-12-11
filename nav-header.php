@@ -1,6 +1,6 @@
 <?php
-require_once '../php/api/config.inc.php';
-require_once '../php/api/ASG2-classes.php';
+require_once 'api/config.inc.php';
+require_once 'api/ASG2-classes.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@ require_once '../php/api/ASG2-classes.php';
 <head>
     <meta charset="utf-8">
     <title>ASG 2</title>
-    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@ require_once '../php/api/ASG2-classes.php';
         <div class="topnav small">
             <a href="#home" class="active"></a>
             <!-- Navigation links (hidden by default) -->
-            <img id="logo" src="../images/logo.jpg">
+            <img id="logo" src="images/logo.jpg">
             <ul class="links">
                 <li><a href="home.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
@@ -34,6 +34,6 @@ require_once '../php/api/ASG2-classes.php';
             </div>
         </div>
     </header>
-    <script src=" ../js/nav.js"> </script>
+    <script src="js/nav.js"> </script>
 
 </html>

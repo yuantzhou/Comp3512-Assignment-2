@@ -1,7 +1,7 @@
 <?php
-require_once '../php/api/config.inc.php';
-require_once '../php/api/ASG2-classes.php';
-include '../php/nav-header.php'
+require_once 'api/config.inc.php';
+require_once 'api/ASG2-classes.php';
+include 'nav-header.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,7 @@ include '../php/nav-header.php'
 <head>
     <meta charset="utf-8">
     <title>About</title>
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 
 <body>

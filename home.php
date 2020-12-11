@@ -1,7 +1,7 @@
 <?php
-require_once '../php/api/config.inc.php';
-require_once '../php/api/ASG2-classes.php';
-include '../php/nav-header.php';
+require_once 'api/config.inc.php';
+require_once 'api/ASG2-classes.php';
+include 'nav-header.php';
 
 session_start();
 $userId = $_SESSION['id'];
@@ -75,7 +75,7 @@ function findRecommended()
 <head>
     <meta charset="utf-8" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>

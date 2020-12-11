@@ -45,7 +45,7 @@ try {
     <title>Browse Paintings</title>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='../css/browse.css' rel='stylesheet' type='text/css'>
+    <link href='css/browse.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -151,19 +151,20 @@ try {
                 }
                 generateTable($paintings); ?>
 
-                <?php function generateTable($list) { ?>
-                <tr>
-                    <th></th>
-                    <th>Artist</th>
-                    <th>Title</th>
-                    <th>Year</th>
-                </tr>
-                <?php 
+                <?php function generateTable($list)
+                { ?>
+                    <tr>
+                        <th></th>
+                        <th>Artist</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                    <?php
                     foreach ($list as $row) { ?>
                         <tr class="tempTr">
                             <td class="img">
                                 <a href="single-painting.php?id=<?= $row['PaintingID'] ?>">
-                                    <img src='../images/paintings/square-medium/<?= $row['ImageFileName'] ?>.jpg' />
+                                    <img src='images/paintings/square-medium/<?= $row['ImageFileName'] ?>.jpg' />
                                 </a>
                             </td>
                             <td class="artist"><?= checkName($row) ?></td>
@@ -183,7 +184,7 @@ try {
                                 </form>
                             </td>
                             <td><button><a href="single-painting.php?id=<?= $row['PaintingID'] ?>">View</a></button></td>
-                    <?php 
+                    <?php
                     }
                 } ?>
             </table>
