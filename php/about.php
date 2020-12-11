@@ -54,7 +54,9 @@ include '../php/nav-header.php'
             <li>Assignment 2 Github: <a href="">Repository Link</a></li>
             <br>
             <li>External Sources
-                <ul>---</ul>
+                <ul>
+                    <li>How to make a hamburger menu => <a href="https://www.youtube.com/watch?v=8r3hGIvyP3k">Youtube Link</a></li>
+                </ul>
             </li>
         </ul>
     </section>
