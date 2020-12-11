@@ -2,7 +2,7 @@
 function initMap() {
 
     map = new google.maps.Map(document.querySelector("div#map"), {
-        center: { lat: 41.89474, lng: 12.4839 },
+        center: { lat: 41.89474, lng: 12.4838 },
         zoom: 6
     });
 }
@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             li.addEventListener("click", function () {
                 galleryInfo(d);
-                createMap(d);
                 generatePaintings(d);
+                createMap(d);
             });
 
             list.appendChild(li);
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /* create a map using Google's API */
     function createMap(gallery) {
         map = new google.maps.Map(document.querySelector("div#map"), {
-            center: { lat: gallery.Latitude, lng: gallery.Longitude },
+            center: { lat: parseFloat(gallery.Latitude), lng: parseFloat(gallery.Longitude) },
             zoom: 18,
             mapTypeId: 'satellite'
         });
@@ -137,14 +137,6 @@ document.addEventListener("DOMContentLoaded", function () {
             linkToSingle.appendChild(title);
             row.appendChild(yow);
 
-            /* function redirectSinglePainting(p) {
-                linkToSingle.href = `single-painting.php?paintingID=${p.paintingID}`;
-            }
-     
-            //handles the "click" by the user and expand image
-            linkToSingle.addEventListener('click', function (e) {
-                redirectSinglePainting(e)
-            }); */
         }
     }
 
