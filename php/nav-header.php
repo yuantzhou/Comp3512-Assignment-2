@@ -9,7 +9,6 @@ require_once '../php/api/ASG2-classes.php';
     <meta charset="utf-8">
     <title>ASG 2</title>
     <link rel="stylesheet" href="../css/nav.css">
-
 </head>
 
 <body>

@@ -9,6 +9,7 @@
     overflow: hidden;
     position: relative;
     border-style: groove;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
   .topnav li {
     text-decoration: none;

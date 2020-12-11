@@ -75,8 +75,6 @@ function findRecommended()
 <head>
     <meta charset="utf-8" />
     <title>Homepage</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/home.css">
 </head>
 

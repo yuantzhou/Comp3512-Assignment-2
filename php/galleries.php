@@ -54,6 +54,7 @@ include '../php/nav-header.php'
                 <table id="table">
                     <thead>
                         <tr>
+
                             <th></th>
                             <th id="artist">Artist</th>
                             <th id="title">Title</th>
